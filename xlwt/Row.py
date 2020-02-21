@@ -60,7 +60,7 @@ class Row(object):
     def __adjust_height(self, style):
         twips = style.font.height
         points = float(twips)/20.0
-        # Cell height in pixels can be calcuted by following approx. formula:
+        # Cell height in pixels can be calculated by following approx. formula:
         # cell height in pixels = font height in points * 83/50 + 2/5
         # It works when screen resolution is 96 dpi
         pix = int(round(points*83.0/50.0 + 2.0/5.0))
